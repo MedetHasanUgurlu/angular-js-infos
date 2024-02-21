@@ -56,4 +56,36 @@
     
     
 ```
+### Filters and pipes
+Uses | 
 
+* currency
+* data
+* filter
+* json
+* limitTo
+* lowercase
+* number
+* orderBy
+* uppercase
+
+
+``` angular2html
+<ul>
+    <li data-ng-repeat="cust in customers | orderBy:'name'">
+        {{cust.orderTotal | currency}}
+    </li>
+
+</ul>
+
+```
+
+#### filtering data
+``` angular2html
+<input type= "text" data-ng-model= "nameText"/>
+<ul>
+    <li data-ng-repeat = "cust in customers | filter:nameText | orderBy:'name'">
+    {{cust.name}}- {{cust.city}}</li>
+</ul>   
+
+```

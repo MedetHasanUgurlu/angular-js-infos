@@ -89,3 +89,43 @@ Uses |
 </ul>   
 
 ```
+
+
+#### creating controller
+``` angular2html
+<input type= "text" data-ng-model= "nameText"/>
+<script>
+    function SimpleController($scope){
+        $scope.customers = [{name:'Medet',surname:'Ugurlu'},{name:'Medet',surname:'Ugurlu'},{name:'Medet',surname:'Ugurlu'}];
+       
+    }
+</script>   
+
+
+
+```
+
+<div ng-controller = "Customer Controller  as ctrl">
+<input type= "text" data-ng-model= "nameText"/>
+<div ng-repeat = "cust in ctrl.customers"></div>
+<script>
+    function SimpleController(){
+        this.customers = [{name:'Medet',surname:'Ugurlu'},{name:'Medet',surname:'Ugurlu'},{name:'Medet',surname:'Ugurlu'}];
+    }
+</script>   
+</div>
+```
+* ya scope kullan ya da this
+
+var demoApp = angular.module('demoApp',[]);
+var demoApp = angular.module('demoApp',['helperModule']);
+
+### module controller ekleme
+var demoApp = angular.module('demoApp',[]);
+demoApp.controller('SimpleController',function($scope){
+this.customers = [{name:'Medet',surname:'Ugurlu'},{name:'Medet',surname:'Ugurlu'},{name:'Medet',surname:'Ugurlu'}]
+})
+
+
+
+

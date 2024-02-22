@@ -39,22 +39,7 @@
               baz
   </div>
     <script src="angular.js"></script>
-<body>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+<body>   
 ```
 ### Filters and pipes
 Uses | 

@@ -104,7 +104,7 @@ Uses |
 
 
 ```
-
+``` angularjs
 <div ng-controller = "Customer Controller  as ctrl">
 <input type= "text" data-ng-model= "nameText"/>
 <div ng-repeat = "cust in ctrl.customers"></div>
@@ -114,17 +114,23 @@ Uses |
     }
 </script>   
 </div>
-```
-* ya scope kullan ya da this
 
+```
+
+* ya scope kullan ya da this
+``` angularjs
 var demoApp = angular.module('demoApp',[]);
 var demoApp = angular.module('demoApp',['helperModule']);
-
+```
 ### module controller ekleme
+
+``` angularjs
 var demoApp = angular.module('demoApp',[]);
 demoApp.controller('SimpleController',function($scope){
 this.customers = [{name:'Medet',surname:'Ugurlu'},{name:'Medet',surname:'Ugurlu'},{name:'Medet',surname:'Ugurlu'}]
 })
+
+```
 
 
 
